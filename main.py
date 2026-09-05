@@ -13,6 +13,7 @@ import pickle
 import re
 from pydantic import BaseModel, ConfigDict
 
+
 class HealthResponse(BaseModel):
     model_config = ConfigDict(protected_namespaces=())
     model_loaded: bool
